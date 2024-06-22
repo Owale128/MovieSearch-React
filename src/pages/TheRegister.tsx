@@ -24,7 +24,7 @@ export const TheRegister = () => {
                 alert('Passwords do not match')
                 
                 setRegister({
-                    userName: '',
+                    userName: register.userName,
                     password: '',
                     confirmPassword: ''
                 })

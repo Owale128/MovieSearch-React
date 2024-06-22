@@ -5,7 +5,6 @@ import { MoviesApp } from "./pages/MoviesApp";
 import { NotFound } from "./pages/NotFound";
 import { TheRegister } from "./pages/TheRegister";
 
-
 export const router = createBrowserRouter([
     {
         path: '/',

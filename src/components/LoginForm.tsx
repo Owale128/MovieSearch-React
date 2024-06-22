@@ -1,4 +1,6 @@
 import { ChangeEvent, FormEvent } from "react";
+import '../sass/loginAndRegister.scss'
+import L from '../images/L.png'
 
 interface LoginFormProps{
     login: {userName: string; password: string};
@@ -10,10 +12,9 @@ interface LoginFormProps{
 export const LoginForm = ({login, goToRegister, handleLogin, handleSubmit}: LoginFormProps) => {
 
     return(
-
-        <>
-    <h1> This is Login Page </h1>
-     <form onSubmit={handleSubmit}>
+        <div className="formContainer">
+        <img src={L} alt='L'className="L" />
+     <form onSubmit={handleSubmit} className="loginForm">
         <label htmlFor="userName">UserName</label>
         <input type="text"
         id="userName"
@@ -30,9 +31,9 @@ export const LoginForm = ({login, goToRegister, handleLogin, handleSubmit}: Logi
         name="password"
         required
         />
-    <button>Login</button>
-    <button onClick={goToRegister}>Register</button>
+    <button className="loginBtn">Login</button>
+    <button onClick={goToRegister} className="goToRegisterBtn">Register</button>
     </form> 
-        </>
+        </div>
     )
 }
