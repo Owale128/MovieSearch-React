@@ -1,21 +1,17 @@
-import { NavLink, Outlet } from "react-router-dom"
+import { Outlet, useLocation } from "react-router-dom"
 
 
 export const Layout = () => {
-
+    const location = useLocation()
+    const isLogin = location.pathname === '/'
     return(
         <>
         <header>
-            <nav>
-                <ul>
-                    <li>
-                        <NavLink to={'/'}>Login</NavLink>
-                    </li>
-                    <li>
-                        <NavLink to={'movies'}>Movies</NavLink>
-                    </li>
-                </ul>
-            </nav>
+            {isLogin ? (
+                <p>Login</p>
+            ): (
+                <p>Movies</p>
+            )}
         </header>
         <main><Outlet /></main>
         <footer>All rights reserved. @2024</footer>

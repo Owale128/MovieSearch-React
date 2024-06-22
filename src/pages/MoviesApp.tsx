@@ -1,6 +1,8 @@
 import { useEffect, useState } from "react"
 import { Movie } from "../models/Movie"
 import { getMovies } from "../services/movieservice"
+import { SearchMovieForm } from "../components/SearchMovieForm"
+import { Movies } from "../components/Movies"
 
 interface movieAppState {
     movies: Movie[]
@@ -32,6 +34,8 @@ export const MoviesApp = () => {
     return(
         <>
         <h1>This is Movies Page</h1>
+        <SearchMovieForm getData={getData}/>
+        <Movies movies={state.movies}/>
         </>
     )
 }
