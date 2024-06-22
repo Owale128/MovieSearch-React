@@ -3,6 +3,7 @@ import { Layout } from "./pages/Layout";
 import { TheLogin } from "./pages/TheLogin";
 import { MoviesApp } from "./pages/MoviesApp";
 import { NotFound } from "./pages/NotFound";
+import { TheRegister } from "./pages/TheRegister";
 
 
 export const router = createBrowserRouter([
@@ -13,6 +14,10 @@ export const router = createBrowserRouter([
             {
                 path: '/',
                 element: <TheLogin />
+            },
+            {
+                path: '/register',
+                element: <TheRegister />
             },
             {
                 path: '/Movies',

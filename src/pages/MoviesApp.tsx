@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react"
 import { Movie } from "../models/Movie"
-import { getMovies } from "../services/movieservice"
+import { getMovies } from "../services/movieService"
 import { SearchMovieForm } from "../components/SearchMovieForm"
 import { Movies } from "../components/Movies"
 
