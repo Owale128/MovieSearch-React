@@ -1,17 +1,24 @@
-import { NavLink, Outlet, useLocation } from "react-router-dom"
+import { Outlet, useLocation, useNavigate } from "react-router-dom"
 import '../sass/main.scss'
 
 export const Layout = () => {
     const location = useLocation();
+    const navigate = useNavigate();
     const isLogin = location.pathname === '/';
     const isRegister = location.pathname === '/register'
+    const logOut = () => {
+        if(confirm('Are you sure you want to logut')) {
+            navigate('/');
+        }
+
+    }
 
     return(
         <>
         <header>
             {!isLogin && !isRegister && (
                 <>
-                <NavLink to={'/'}><button>Logout</button></NavLink>
+                <button onClick={logOut}>Logout</button>
                 <p>Movies</p>
                 </>
             )}
