@@ -56,8 +56,11 @@ div {
             margin-left: -12rem;
         }
 
-        input {
-            margin-left: 1rem;  
+        input[type="checkbox"] {
+            margin-left: 1rem; 
+            width: 1.1rem;
+            height: 1.1rem; 
+            vertical-align: middle; 
         }
         .sortMoviesBtn {
            margin-left: 25rem;
