@@ -31,17 +31,23 @@ export const Movies = ({movies = []}: IMoviesProps) => {
 
     return(
         <div>
-        <button onClick={sort}>Sortera</button>
+            <div className="sortButtons">
+            <label htmlFor="newerMovies">Show newer movies</label>
             <input type="checkbox"
             checked={showNewerMovies}
             onChange={() =>setShowNewerMovies(!showNewerMovies)}
+            name="newerMovies"
             />
+            <button onClick={sort} className="sortMoviesBtn">Sort movies</button>
+            </div>
+              <div className="movieContainer">
                 {modifiedMovies.map((movie) => (
                     <MovieItem 
                     movie={movie}
                     key={movie.imdbID}
                     />
                 ))}
+                </div>
                 </div>
     )
 }

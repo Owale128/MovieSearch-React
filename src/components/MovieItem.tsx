@@ -8,9 +8,10 @@ movie: Movie
 export const MovieItem = ({movie}: IMovieItemProps) => {
 
     return(
-        <div className="movieContainer">
+        <div className="movieItem" title="click for more info">
         <h3>{movie.Title}</h3>
         <img src={movie.Poster} alt={movie.Title} />
-        </div>
+        <p>Year: {movie.Year}</p>
+        </ div>
     )
 }

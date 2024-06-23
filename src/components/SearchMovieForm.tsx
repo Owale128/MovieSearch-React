@@ -10,12 +10,14 @@ export const SearchMovieForm = ({getData}: ISearchMovieFormProps) => {
 
     const handleSearch = (e: FormEvent) => {
         e.preventDefault();
-        getData(searchText)
-        setSearchText('')
+        if(searchText.trim() !== ''){
+            getData(searchText)
+            setSearchText('')
+        }
     }
 
     return (
-        <div>
+        <div className="searchMovieForm">
         <form onSubmit={handleSearch}>
             <label htmlFor="search">Search for a movie</label>
             <input type="text"

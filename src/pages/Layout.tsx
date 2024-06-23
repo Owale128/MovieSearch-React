@@ -10,7 +10,6 @@ export const Layout = () => {
         if(confirm('Are you sure you want to logut')) {
             navigate('/');
         }
-
     }
 
     return(
@@ -18,8 +17,7 @@ export const Layout = () => {
         <header>
             {!isLogin && !isRegister && (
                 <>
-                <button onClick={logOut}>Logout</button>
-                <p>Movies</p>
+                <button onClick={logOut} className="logoutBtn">Logout</button>
                 </>
             )}
           {isLogin && <p>Login</p>}
