@@ -1,9 +1,11 @@
+@import 'keyframes.scss';
 
 .formContainer{
     width: 100%;
     display: flex;
     align-items: center;
     flex-direction: column;
+    animation: smoothPopUp 0.8s ease-out forwards;
 
 
 
