@@ -40,7 +40,7 @@ export const RegisterForm = ({register, handleRegister, handleSubmit, backBtn}: 
             name="confirmPassword"
             />
             <button className="registerBtn">Register</button>
-           <button onClick={backBtn} className="backToLoginBtn">Back</button>
+           <button onClick={backBtn} className="backToLoginBtn">Back to login</button>
         </form>
             </div>
     )

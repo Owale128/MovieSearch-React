@@ -55,8 +55,8 @@
         font-size: 1rem;
         transition: 0.3s ease;
         border-radius: 0.2rem;
-        box-shadow: 0 0 0.8rem rgba(255, 255, 255, 0.2); 
         background: rgba(0, 0, 0, 0.6);
+        box-shadow: 0 0 0.8rem rgba(255, 255, 255, 0.2); 
 
         &:hover {
             background: #604f63;
@@ -64,8 +64,13 @@
     }
 
     .goToRegisterBtn, .backToLoginBtn {
-        width: 40%;
-        margin-top: 1rem;    
+        width: 70%;
+        margin: 1rem;
+    }
+    
+    .goToRegisterBtn{
+        margin-top: 2rem;    
+
     }
 }
 

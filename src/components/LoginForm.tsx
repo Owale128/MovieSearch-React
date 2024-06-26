@@ -32,7 +32,7 @@ export const LoginForm = ({login, goToRegister, handleLogin, handleSubmit}: Logi
         required
         />
     <button className="loginBtn">Login</button>
-    <button onClick={goToRegister} className="goToRegisterBtn">Register</button>
+    <button onClick={goToRegister} className="goToRegisterBtn">Register a new account</button>
     </form> 
         </div>
     )
