@@ -18,6 +18,7 @@ export const MoviesApp = () => {
     const getData = async (searchText: string) => {
         try{
             const movies = await getMovies(searchText)
+            console.log(movies)
             setState({ fetchDone: true, movies })
         }catch(error) {
             console.error('Could not fetch', error)
