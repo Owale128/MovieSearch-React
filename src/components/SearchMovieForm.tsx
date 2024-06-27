@@ -25,7 +25,7 @@ export const SearchMovieForm = ({getData}: ISearchMovieFormProps) => {
             onChange={(e) => setSearchText(e.target.value)}
             name="search"
             />
-            <button>Sök</button>
+            <button>Search</button>
         </form>
         </div>
     )
