@@ -141,8 +141,17 @@ div {
     }
 
     .searchMovieForm {
-        left: 6.5rem;
+        left: 6rem;
         position: fixed;
+    
+        input {
+            text-align: center;
+            padding: 0.4rem;
+        }
+
+        button {
+            padding: 0.5rem;
+        }
     }
 
     div {
@@ -150,8 +159,15 @@ div {
             margin-top: 1rem;
             left: 18rem;
 
+            input[type="checkbox"] {
+                width: 1.4rem;
+                height: 1.4rem;
+
+             }
+
             .sortMoviesBtn{
                 display: block;
+                padding: 0.8rem;
                 margin: 0.8rem 0 0 -9.5rem;
             }
         }
@@ -161,13 +177,15 @@ div {
             margin-top: 13rem;
 
             .movieItem{
-                width: 10.7rem;
+                width: 10.5rem;
                 height: 19rem;
                 padding-top: 0.3rem;
                 
                 &:hover {
                     color: white;
                     background-color: black;
+                     animation: none;      
+    
                 }
 
                 &:active {
