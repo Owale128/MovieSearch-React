@@ -21,7 +21,7 @@ export const TheRegister = () => {
             e.preventDefault()
 
             try {
-                const response = await axios.post('http://localhost:5000/api/register', {
+                const response = await axios.post('https://moviesearch-react-backend.onrender.com/api/register', {
                 username: register.userName,
                 password: register.password,
                 confirmPassword: register.confirmPassword
