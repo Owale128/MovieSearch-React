@@ -1,17 +1,20 @@
 @import 'keyframes.scss';
+@import 'spinner.scss';
 
 .formContainer{
     width: 100%;
     display: flex;
+    position: relative;
     align-items: center;
     flex-direction: column;
     animation: smoothPopUp 0.8s ease-out forwards;
-    
+
     .L, .Ruyk {
         width: 13rem;
         z-index: 1000;
         margin-bottom: -1.4rem;
     }
+
     .Ruyk{
         width: 7rem;
         margin: 3rem 0 -0.5rem 0;

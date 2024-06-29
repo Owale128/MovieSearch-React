@@ -5,15 +5,15 @@
 }
 
 header {
-    display: flex;
     width: 100%;
-    padding: 0.5rem;
     z-index: 1000;
+    display: flex;
     color: white;
     position: fixed;
+    padding: 0.5rem;
     text-align: center;
-    text-decoration: underline;
     background-color: black;
+    text-decoration: underline;
     
     .logoutBtn {
         padding: 0.5rem;
@@ -33,20 +33,19 @@ header {
     }
     
     p{
-        font-size: 1.8rem;    
         margin: auto;
-        
+        font-size: 1.8rem;    
     }
 }
 
 main {
-min-height: 92.7vh;
-max-height: 122vh;
-display: flex;
-align-items: center;
-flex-direction: column;
-justify-content: center;
-background: linear-gradient(to bottom, rgb(47, 46, 46), rgba(57, 35, 61, 0.8)) no-repeat center center / cover;
+    display: flex;
+    max-height: 122vh;
+    min-height: 92.7vh;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    background: linear-gradient(to bottom, rgb(47, 46, 46), rgba(57, 35, 61, 0.8)) no-repeat center center / cover;
 }
 
 footer {

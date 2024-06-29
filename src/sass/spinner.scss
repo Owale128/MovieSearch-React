@@ -1,0 +1,21 @@
+@import 'keyframes.scss';
+
+.spinnerOverlay {
+    top: 3rem;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    position: absolute;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .spinner {
+      width: 6rem;
+      height: 6rem;
+      border-radius: 50%;
+      border: 1rem solid #f3f3f3; 
+      border-top: 1rem solid #3498db; 
+      animation: spin 1.5s linear infinite;
+  }
+  

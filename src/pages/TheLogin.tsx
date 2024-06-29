@@ -9,7 +9,7 @@ export const TheLogin = () => {
             userName: '',
             password: ''
         })
-
+        const[loading, setLoading] = useState(false)
         const navigate = useNavigate()
 
        const handleLogin = (e: ChangeEvent<HTMLInputElement>) => {
@@ -19,28 +19,33 @@ export const TheLogin = () => {
 
        const handleSubmit = async (e: FormEvent) => {
             e.preventDefault();
+            setLoading(true)
 
-            try {
-                const response = await axios.post('http://localhost:5000/api/login', {
-                    username: login.userName,
+            setTimeout(async() => {  
+                try {
+                    const response = await axios.post('http://localhost:5000/api/login', {
+                        username: login.userName,
                     password: login.password
                 })
                 const { token } = response.data
                 localStorage.setItem('token', token)
+                
                 navigate('/movies')
             } catch(error) {
                 alert('Invalid username or password')
-                console.error('Login error', error)
+            } finally {
+                setLoading(false)
             }
-       }
-
+        }, 1500);
+        }
+        
        const goToregister = () => {
         navigate('/register')
        }
   
     return (
         <>
-    <LoginForm login={login} goToRegister={goToregister} handleLogin={handleLogin} handleSubmit={handleSubmit}  />
+    <LoginForm login={login} goToRegister={goToregister} handleLogin={handleLogin} handleSubmit={handleSubmit} loading={loading}  />
         </>
     )
 }

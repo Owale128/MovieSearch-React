@@ -7,13 +7,19 @@ interface LoginFormProps{
     goToRegister: () => void;
     handleLogin: (e: ChangeEvent<HTMLInputElement>) => void;
     handleSubmit: (e: FormEvent) => void;
+    loading: boolean;
 }
 
-export const LoginForm = ({login, goToRegister, handleLogin, handleSubmit}: LoginFormProps) => {
+export const LoginForm = ({login, goToRegister, handleLogin, handleSubmit, loading}: LoginFormProps) => {
 
     return(
         <div className="formContainer">
         <img src={L} alt='L'className="L" />
+        {loading && (
+            <div className="spinnerOverlay">
+                <div className="spinner"></div>
+            </div>
+        )}
      <form onSubmit={handleSubmit} className="loginForm">
         <label htmlFor="userName">UserName</label>
         <input type="text"
