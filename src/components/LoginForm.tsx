@@ -21,7 +21,7 @@ export const LoginForm = ({login, goToRegister, handleLogin, handleSubmit, loadi
             </div>
         )}
      <form onSubmit={handleSubmit} className="loginForm">
-        <label htmlFor="userName">UserName</label>
+        <label htmlFor="userName">Username</label>
         <input type="text"
         id="userName"
         value={login.userName}
