@@ -8,4 +8,4 @@ Link to the app: https://movie-search-react-navy.vercel.app/
 # Stack:
 [![My Skills](https://skillicons.dev/icons?i=vite,ts,react,html,sass,vercel&perline=3)](https://skillicons.dev)
 #
-Link to my backend repo: https://github.com/Owale128/MovieSearch-React-Backend
+Link to the backend repo: https://github.com/Owale128/MovieSearch-React-Backend
