@@ -4,7 +4,7 @@ This is a React-based web application that allows users to search, sort and filt
 
 Link to the app: https://movie-search-react-navy.vercel.app/
 
-![movieSearchPic](https://github.com/Owale128/MovieSearch-React/assets/110387474/c5df3b76-a6b5-4537-b9db-46c4944866fc)
+![MovieSearchPic](https://github.com/Owale128/MovieSearch-React-Backend/assets/110387474/f2d9dfb7-cea9-4eda-83a2-a3c88c4c2323)
 # Stack:
 [![My Skills](https://skillicons.dev/icons?i=vite,ts,react,html,sass,vercel&perline=3)](https://skillicons.dev)
 #
