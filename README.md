@@ -6,6 +6,6 @@ You can visit the page at: https://movie-search-react-navy.vercel.app/
 
 ![movieSearchPic](https://github.com/Owale128/MovieSearch-React/assets/110387474/c5df3b76-a6b5-4537-b9db-46c4944866fc)
 # Stack:
-[![My Skills](https://skillicons.dev/icons?i=js,react,html,sass,vercel)](https://skillicons.dev)
+[![My Skills](https://skillicons.dev/icons?i=vite,js,react,html,sass,vercel&perline=3)](https://skillicons.dev)
 #
 Link to my backend repo: https://github.com/Owale128/MovieSearch-React-Backend
