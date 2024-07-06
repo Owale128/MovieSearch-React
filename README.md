@@ -8,4 +8,5 @@ You can visit the page at: https://movie-search-react-navy.vercel.app/
 # Stack:
 [![My Skills](https://skillicons.dev/icons?i=js,react,html,sass)](https://skillicons.dev)
 <br>
+#
 Link to my backend repo: https://github.com/Owale128/MovieSearch-React-Backend
