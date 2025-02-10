@@ -6,14 +6,12 @@
 
 header {
     width: 100%;
-    z-index: 1000;
     display: flex;
     color: white;
     position: fixed;
     padding: 0.5rem;
     background-color: black;
 
-    
     .logoutBtn {
         padding: 0.5rem;
         cursor: pointer;
@@ -39,7 +37,7 @@ header {
 
 main {
     display: flex;
-    min-height: 92.9vh;
+    min-height: 93.7vh;
     align-items: center;
     flex-direction: column;
     justify-content: center;
