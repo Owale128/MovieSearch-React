@@ -2,7 +2,6 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    overflow-y: hidden;
 }
 
 header {
@@ -12,9 +11,8 @@ header {
     color: white;
     position: fixed;
     padding: 0.5rem;
-    text-align: center;
     background-color: black;
-    text-decoration: underline;
+
     
     .logoutBtn {
         padding: 0.5rem;
@@ -41,7 +39,7 @@ header {
 
 main {
     display: flex;
-    min-height: 100vh;
+    min-height: 92.9vh;
     align-items: center;
     flex-direction: column;
     justify-content: center;
@@ -49,14 +47,14 @@ main {
 }
 
 footer {
-    padding: 1rem;
+    padding: 1.5rem;
     color: white;
     font-size: 1.1rem;
     text-align: center;
     background-color: black;
 }
 
-@media screen and (max-width: 47.94rem) {
+@media screen and (max-width: 47.95rem) {
 
     .logoutBtn {
       margin-top: 0.7rem;  
